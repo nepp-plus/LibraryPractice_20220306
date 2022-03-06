@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
 
 //        인터넷상의 이미지를 곧바로 이미지뷰에 반영.
 
-        Glide.with(this).load("https://img0.yna.co.kr/photo/ap/2011/04/13/PAP20110413127601034_P2.jpg").into(imgInternet)
+        Glide.with(this).load("http://img0.yna.co.kr/photo/ap/2011/04/13/PAP20110413127601034_P2.jpg").into(imgInternet)
 
     }
 
