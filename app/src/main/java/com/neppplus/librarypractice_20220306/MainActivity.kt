@@ -29,6 +29,13 @@ class MainActivity : AppCompatActivity() {
 
 //                    권한이 획득 되었을때 할 행동 적는 함수
 
+
+//                    실제 : (권한이 있을때만) CALL 기능 실제 활용
+
+                    val myUri = Uri.parse("tel:010-5555-6666")
+                    val myIntent = Intent( Intent.ACTION_CALL, myUri )
+                    startActivity(myIntent)
+
                 }
 
                 override fun onPermissionDenied(deniedPermissions: MutableList<String>?) {
@@ -42,11 +49,6 @@ class MainActivity : AppCompatActivity() {
             }
 
 
-//            임시 : CALL 기능 실제 활용 => 앱이 죽을 예정
-
-            val myUri = Uri.parse("tel:010-5555-6666")
-            val myIntent = Intent( Intent.ACTION_CALL, myUri )
-            startActivity(myIntent)
 
         }
 
