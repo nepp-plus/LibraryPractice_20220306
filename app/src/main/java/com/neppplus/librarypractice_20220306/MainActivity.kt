@@ -73,6 +73,8 @@ class MainActivity : AppCompatActivity() {
 
     fun setValues() {
 
+//        인터넷상의 이미지를 곧바로 이미지뷰에 반영.
+
     }
 
 }
